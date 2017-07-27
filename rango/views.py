@@ -6,4 +6,7 @@ def index(request):
     return render(request, 'rango/index.html', context=context_dict)
 
 def about(request):
-    return HttpResponse("This is the about site! <br><a href='/rango/'>Back to index</a>")
+    return HttpResponse("This is the about site! <br> <a href='/rango/'>Back to index</a> <br> <a href='/media/cake.jpg'>To cake</a>")
+
+def mjau(request):
+    return render(request, 'rango/cat.html')
